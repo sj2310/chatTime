@@ -1,0 +1,84 @@
+.chatList {
+  flex: 1;
+  overflow: scroll;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction:column;
+
+  .items{
+    flex: 1;
+    border-radius: 35px 35px 0px 10px;
+    background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
+    color: black;
+    padding-top: 8px;
+  }
+  .search {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+
+    .searchBar {
+      flex: 1;
+      background-color:#333a47f3;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      border-radius: 5px;
+
+      input {
+        background-color: transparent;
+        border: none;
+        outline: none;
+        color: white;
+        flex: 1;
+      }
+      img {
+        width: 25px;
+        height: 25px;
+        padding: 5px;
+      }
+    }
+    .add {
+      width: 25;
+      height: 25px;
+      background-color:#333a47f3;
+      padding: 5px;
+      border-radius: 2px;
+      cursor: pointer;
+    }
+  }
+
+  .item{
+    display:flex;
+    align-items: center;
+    gap: 15px;
+    cursor: pointer;
+    border-bottom: 1px solid hsla(0, 0%, 87%, .6);
+    padding: 10px 20px;
+
+    img{
+      width: 35px;
+      height: 35px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+    .texts{
+      display: flex;
+      flex-direction: column;
+
+      span{
+        font-weight: 500;
+      }
+      p{
+        font-size: 12px;
+        font-weight: 250;
+      }
+    }
+  }
+}
+
+/* .chatList:hover{
+  overflow: scroll;
+  overflow-x: hidden;
+} */

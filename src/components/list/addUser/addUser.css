@@ -1,0 +1,63 @@
+.addUser{
+    padding: 50px;
+    width: fit-content;
+    height: fit-content;
+    background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    border-radius: 10px;
+    color: black;
+    border: 1.6px solid rgb(5, 15, 88);
+    
+
+    button{
+        height: 35px;
+        width: 60px;
+        padding: 5px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-weight: 500;
+        background-color: #0083f5;
+    }
+    .searchAddUser{
+        display: flex;
+        gap: 20px;
+        align-items: center;
+        justify-content:space-between;
+        margin-bottom: 50px;
+        input{
+            padding: 10px;
+            height: 40px;
+            min-width: 300px;
+            border-radius: 10px;
+            border: none;
+            width: 60%;
+        }
+    }
+    .addPerson{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        .temp{
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        button{
+            width: 45px !important ; 
+        }
+    }
+    img{
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+}

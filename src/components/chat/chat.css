@@ -1,0 +1,124 @@
+.chat {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  border-left: 1px solid hsla(0, 0%, 87%, 0.4);
+  border-right: 1px solid hsla(0, 0%, 87%, 0.4);
+}
+.top {
+  width: 100% !important;
+  padding: 10px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid hsla(0, 0%, 87%, 0.4);
+
+  .texts {
+    span {
+      font-weight: 500;
+      font-size: 18px;
+    }
+    p {
+      font-weight: 300;
+      font-size: 12px;
+      color: rgba(255, 255, 255, 0.856);
+    }
+  }
+}
+.bottom {
+  backdrop-filter: blur(10px);
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  padding: 18px 20px;
+  .emoji-container{
+    position: relative;
+    .picker{
+      position: absolute;
+      z-index: 9999;
+      bottom: 30px;
+      right:-100px;
+    }
+  }
+  img {
+    width: 18px !important;
+    height: 18px !important;
+  }
+  input {
+    flex: 1;
+    height: 40px;
+    background-color: #333a4794;
+    outline: none;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    padding: 5px;
+
+    &:disabled{
+      cursor: not-allowed;
+    }
+  }
+  .send {
+    background-color: #1f8ef1;
+    width: fit-content;
+    height: 30px;
+    padding: 5px 15px;
+    border-radius: 5px;
+
+    &:disabled{
+      background-color: #1f8ff1b1;
+      cursor: not-allowed;
+    }
+  }
+  img {
+    cursor: pointer;
+    object-fit: cover;
+  }
+}
+.change {
+  filter: blur(10px);
+}
+.center {
+  
+  backdrop-filter: blur(10px);
+  overflow: scroll;
+  overflow-x: hidden;
+  padding: 5px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border-bottom: 1px solid hsla(0, 0%, 87%, 0.4);
+ 
+  img{
+    width: 40%;
+    height: 200px;
+    margin:0px 5px;
+    border-radius: 10px;
+  }
+ 
+  .msg {
+    background-color: hsla(218, 68%, 79%, 0.5);
+    width: fit-content;
+    margin:0px 5px;
+    align-content: flex-end;
+    max-width: 60%;
+    border-radius: 10px;
+    padding: 5px 15px;
+    align-self: flex-start;
+    position: relative;
+    .time {
+      display: block;
+      position: absolute;
+      right: 10px;
+      bottom:-15px;
+      color: rgba(255, 255, 255, 0.76);
+      font-size: .6em;
+    }
+
+  }
+  .own {
+    background-color: hsla(317, 45%, 57%, 0.5);
+    align-self: flex-end;
+  }
+}
